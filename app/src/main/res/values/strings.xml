@@ -5,4 +5,12 @@
     <string name="title_book">Book</string>
     <string name="title_pets">Pets</string>
     <string name="title_add_pet">Add Pet</string>
+    <string name="add_pet_name">Name</string>
+    <string name="add_pet_race">Race</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_pet_age">Age</string>
+    <string name="add_pet_size">Size</string>
+    <string name="add_pet_hair">Hair</string>
+    <string name="add_pet_weight">Weight</string>
 </resources>

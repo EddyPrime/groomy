@@ -1,64 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.addPet.AddPetFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <TextView
-        android:id="@+id/text_add_pet_name"
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.875"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/text_add_pet_race"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="172dp"
-        android:text="Race"
-        app:layout_constraintBottom_toTopOf="@+id/text_add_pet_age"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/text_add_pet_age"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="172dp"
-        android:text="Age"
-        app:layout_constraintBottom_toTopOf="@+id/text_add_pet_size"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <TextView
-        android:id="@+id/text_add_pet_size"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
-        android:text="Size"
-        app:layout_constraintBottom_toTopOf="@+id/text_add_pet_hair"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <TextView
-        android:id="@+id/text_add_pet_hair"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hair"
-        app:layout_constraintBottom_toTopOf="@+id/text_add_pet_weight"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/text_add_pet_weight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="244dp"
-        android:text="Weight"
-        app:layout_constraintBottom_toBottomOf="@+id/text_add_pet_name"
-        tools:layout_editor_absoluteX="16dp" />
+        android:layout_height="match_parent"
+        tools:context=".ui.addPet.AddPetFragment">
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/text_add_pet_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="@string/title_add_pet"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_add_pet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_pet_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edit_text_add_pet_name"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_add_pet_title"
+            app:layout_constraintVertical_bias="0.062" />
+
+        <EditText
+            android:id="@+id/edit_text_add_pet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="88dp"
+            android:hint="@string/add_pet_name"
+            android:inputType="text"
+            android:labelFor="@id/text_add_pet_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_add_pet_title"
+            app:layout_constraintVertical_bias="0.043" />
+
+        <TextView
+            android:id="@+id/text_add_pet_race"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_pet_race"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edit_text_add_pet_race"
+            app:layout_constraintHorizontal_bias="0.261"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_add_pet_name"
+            app:layout_constraintVertical_bias="0.076" />
+
+
+        <EditText
+            android:id="@+id/edit_text_add_pet_race"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="92dp"
+            android:hint="@string/add_pet_race"
+            android:inputType="text"
+            android:labelFor="@id/text_add_pet_race"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_add_pet_name"
+            app:layout_constraintVertical_bias="0.033" />
+
+        <TextView
+            android:id="@+id/text_add_pet_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_pet_age"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edit_text_add_pet_age"
+            app:layout_constraintHorizontal_bias="0.278"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_add_pet_race"
+            app:layout_constraintVertical_bias="0.063" />
+
+        <EditText
+            android:id="@+id/edit_text_add_pet_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:hint="@string/add_pet_age"
+            android:inputType="number"
+            android:labelFor="@id/text_add_pet_age"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_add_pet_race"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/text_add_pet_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_pet_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edit_text_add_pet_size"
+            app:layout_constraintHorizontal_bias="0.275"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_add_pet_age"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <EditText
+            android:id="@+id/edit_text_add_pet_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="92dp"
+            android:hint="@string/add_pet_size"
+            android:inputType="text"
+            android:labelFor="@id/text_add_pet_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_add_pet_age"
+            app:layout_constraintVertical_bias="0.02" />
+
+        <TextView
+            android:id="@+id/text_add_pet_hair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_pet_hair"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edit_text_add_pet_hair"
+            app:layout_constraintHorizontal_bias="0.265"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_add_pet_size"
+            app:layout_constraintVertical_bias="0.107" />
+
+        <EditText
+            android:id="@+id/edit_text_add_pet_hair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="88dp"
+            android:autofillHints="name"
+            android:hint="@string/add_pet_hair"
+            android:inputType="text"
+            android:labelFor="@id/text_add_pet_hair"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_add_pet_size"
+            app:layout_constraintVertical_bias="0.041" />
+
+        <TextView
+            android:id="@+id/text_add_pet_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_pet_weight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edit_text_add_pet_weight"
+            app:layout_constraintHorizontal_bias="0.297"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_add_pet_hair"
+            app:layout_constraintVertical_bias="0.071" />
+
+        <EditText
+            android:id="@+id/edit_text_add_pet_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="80dp"
+            android:autofillHints="name"
+            android:hint="@string/add_pet_weight"
+            android:inputType="numberDecimal"
+            android:labelFor="@id/text_add_pet_weight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_add_pet_hair"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button_add_pet_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button_add_pet_cancel"
+            app:layout_constraintHorizontal_bias="0.284"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_add_pet_race"
+            app:layout_constraintVertical_bias="0.827" />
+
+        <Button
+            android:id="@+id/button_add_pet_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="76dp"
+            android:text="@string/cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_add_pet_race"
+            app:layout_constraintVertical_bias="0.822" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

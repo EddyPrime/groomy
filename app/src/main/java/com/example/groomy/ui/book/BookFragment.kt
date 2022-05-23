@@ -1,16 +1,13 @@
 package com.example.groomy.ui.book
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import com.example.groomy.R
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.groomy.databinding.FragmentBookBinding
-import com.example.groomy.databinding.FragmentProfileBinding
-import com.example.groomy.ui.profile.ProfileViewModel
 
 class BookFragment : Fragment() {
 

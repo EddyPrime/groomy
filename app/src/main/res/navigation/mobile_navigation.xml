@@ -21,11 +21,7 @@
         android:id="@+id/navigation_pets"
         android:name="com.example.groomy.ui.pets.PetsFragment"
         android:label="@string/title_pets"
-        tools:layout="@layout/fragment_pets" >
-        <action
-            android:id="@+id/action_navigation_pets_to_navigation_add_pet"
-            app:destination="@id/navigation_add_pet" />
-    </fragment>
+        tools:layout="@layout/fragment_pets" />
 
     <fragment
         android:id="@+id/navigation_profile"
