@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Groomy</string>
+    <string name="title_home">Home</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_book">Book</string>
+    <string name="title_pets">Pets</string>
+    <string name="title_add_pet">Add Pet</string>
+</resources>
